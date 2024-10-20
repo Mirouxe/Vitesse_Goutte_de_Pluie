@@ -1,6 +1,7 @@
-Ce projet a pour objectif de répondre à une question en apparence simple : Quelle est la vitesse de la pluie ? 
+**Ce projet a pour objectif de répondre à une question en apparence simple : Quelle est la vitesse de la pluie ?** 
 
 Pour répondre à cette question, nous pouvons la reformuler en supposant que la vitesse de la pluie est la vitesse d'une goutte de pluie.
+
 Afin de résoudre ce problème, il est nécessaire de formuler le problème physique en s'appuyant sur certaines hypothèses de modélisation. 
 
 Voici les différents cas étudiés : 
@@ -12,6 +13,7 @@ Voici les différents cas étudiés :
 - Cas 3 : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid et à la poussée d'Archimède
 
 - Cas 3bis : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid en négligeant la poussée d'Archimède
+
 
 **Hypothèse 3.b (Loi de traînée quadratique en négligeant la poussée d'archimède)** :
 
