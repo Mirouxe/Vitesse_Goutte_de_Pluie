@@ -2,17 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # ==== CONSTANTES ====
-pair = 1.292  # Densité de l'air (kg/m³)
-peau = 1e3    # Densité de l'eau (kg/m³)
-Ro = 2e-3     # Rayon de la goutte de pluie (m)
-pee = np.pi   # Constante Pi
-g = 9.81      # Gravité (m/s²)
-Cx = 0.445    # Coefficient de traînée
+pair = 1.292    # Densité de l'air (kg/m³)
+peau = 1e3      # Densité de l'eau (kg/m³)
+Ro = 1e-3       # Rayon de la goutte de pluie (m)
+pee = np.pi     # Constante Pi
+g = 9.81        # Gravité (m/s²)
+Cx = 0.445      # Coefficient de traînée
+muair = 1.81e-5 # viscosite dynamique de l'air (Pa/s)
 
-vo = 10       # Vitesse initiale (m/s)
-zo = 1000     # Hauteur initiale (m)
-time = 150    # Durée (s)
-dt = 5        # Intervalle de temps (s)
+vo = 0.1      # Vitesse initiale (m/s)
+time = 20     # Durée (s)
+dt = 1        # Intervalle de temps (s)
 
 t = np.arange(0, time + dt, dt)  # Temps 
 
@@ -24,23 +24,23 @@ def calc_v1(t):
 
 def calc_v2(t):
     """Hypothèse 2 : Loi de traînée linéaire"""
-    alpha = 1e-7
-    a = 3 / 4 * alpha / (peau * pee * Ro**3)
-    return vo * np.exp(-a * t) + g / a * (1 - pair / peau) * (1 - np.exp(-a * t))
+    alpha = 6*pee*Ro*muair
+    a2 = 3 / 4 * alpha / (peau * pee * Ro**3)
+    return vo * np.exp(-a2 * t) + g / a2 * (1 - pair / peau) * (1 - np.exp(-a2 * t))
 
 def calc_v3(t):
     G = g * (1-pair/peau)
-    a = (3 / 8 * Ro) * Cx * (pair / peau)
-    ra = np.sqrt(a)
+    a3 = 3 / (8 * Ro) * Cx * (pair / peau)
+    ra3 = np.sqrt(a3)
     rG = np.sqrt(G)
-    return np.sqrt(G / a) * np.tanh(ra * t + 1 / 2 * np.log((rG + ra * vo) / (rG - ra * vo)))
+    return np.sqrt(G / a3) * np.tanh(ra3 * t + 1 / 2 * np.log((rG + ra3 * vo) / (rG - ra3 * vo)))
 
 def calc_v3b(t):
     """Hypothèse 3b : Loi de traînée quadratique sans Archimède"""
-    a = (3 / 8 * Ro) * Cx * (pair / peau)
-    ra = np.sqrt(a)
+    a3b = 3 / (8 * Ro) * Cx * (pair / peau)
+    ra3b = np.sqrt(a3b)
     rg = np.sqrt(g)
-    return np.sqrt(g / a) * np.tanh(ra * t + 1 / 2 * np.log((rg + ra * vo) / (rg - ra * vo)))
+    return np.sqrt(g / a3b) * np.tanh(ra3b * t + 1 / 2 * np.log((rg + ra3b * vo) / (rg - ra3b * vo)))
 
 # ==== GRAPHIQUE ====
 
