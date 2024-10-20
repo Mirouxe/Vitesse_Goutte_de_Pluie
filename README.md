@@ -35,3 +35,4 @@ avec :
 $$
 \beta = \frac{3}{8R_0} C_x
 $$
+
