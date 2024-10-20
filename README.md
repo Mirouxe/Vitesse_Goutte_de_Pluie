@@ -6,13 +6,13 @@ Afin de résoudre ce problème, il est nécessaire de formuler le problème phys
 
 Voici les différents cas étudiés : 
 
-- Cas 1 : Goutte de pluie sphérique sans frottement soumise à son poid et à la poussée d'Archimède
+- **Cas 1** : Goutte de pluie sphérique sans frottement soumise à son poid et à la poussée d'Archimède
 
-- Cas 2 : Goutte de pluie sphérique avec frottement (loi linéaire) soumise à son poid et à la poussée d'Archimède
+- **Cas 2** : Goutte de pluie sphérique avec frottement (loi linéaire) soumise à son poid et à la poussée d'Archimède
  
-- Cas 3 : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid et à la poussée d'Archimède
+- **Cas 3** : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid et à la poussée d'Archimède
 
-- Cas 3bis : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid en négligeant la poussée d'Archimède
+- **Cas 3bis** : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid en négligeant la poussée d'Archimède
 
 
 **Hypothèse 3.b (Loi de traînée quadratique en négligeant la poussée d'archimède)** :
