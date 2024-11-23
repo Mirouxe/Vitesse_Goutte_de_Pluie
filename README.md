@@ -58,6 +58,6 @@ $$
 v(t) = -\sqrt{\frac{g}{\beta}} \tanh\left( \frac{1}{2} \ln \left| \frac{\sqrt{\frac{g}{\beta}} + v_0}{\sqrt{\frac{g}{\beta}} - v_0} \right| + \sqrt{g \beta} \, t \right)
 $$
 $$
-\text{avec } \beta = \frac{3 C_x}{8 \rho}\frac{\rho_{\text{air}}}{\rho_{\text{eau}}}
+\text{avec } \beta = \frac{3 C_x}{8 R_0}\frac{\rho_{\text{air}}}{\rho_{\text{eau}}}
 $$
 
