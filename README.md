@@ -51,6 +51,6 @@ $$
 $$
 avec :
 $$
-\beta = \frac{3}{8R_0} C_x
+\beta = \frac{3C_x}{8R_0} C_x \frac{\rho_{\text{air}}}{\rho_{\text{eau}}}
 $$
 
