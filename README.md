@@ -54,7 +54,9 @@ avec :
 $$
 \beta = \frac{3C_x}{8R_0}\frac{\rho_{\text{air}}}{\rho_{\text{eau}}}
 $$
+$$
+v(t) = -\sqrt{\frac{g}{\beta}} \tanh\left( \frac{1}{2} \ln \left| \frac{\sqrt{\frac{g}{\beta}} + v_0}{\sqrt{\frac{g}{\beta}} - v_0} \right| + \sqrt{g \beta} \, t \right)
 
-v(t) = -√(g/β) tanh( (1/2) ln | (√(g/β) + v₀) / (√(g/β) - v₀) | + √(gβ) t )
+\text{avec } \beta = \frac{3 \xi}{8 \rho}.
+$$
 
-avec β = 3ξ / (8ρ).
