@@ -55,3 +55,6 @@ $$
 \beta = \frac{3C_x}{8R_0}\frac{\rho_{\text{air}}}{\rho_{\text{eau}}}
 $$
 
+v(t) = -√(g/β) tanh( (1/2) ln | (√(g/β) + v₀) / (√(g/β) - v₀) | + √(gβ) t )
+
+avec β = 3ξ / (8ρ).
