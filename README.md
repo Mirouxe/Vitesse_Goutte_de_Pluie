@@ -34,7 +34,7 @@ $$
 $$
 
 $$
-\vec{F}_t = \frac{1}{2} \rho_{\text{eau}} C_x \pi R_0^2 v^2 \, \vec{e}_z
+\vec{F}_t = \frac{1}{2} \rho_{\text{air}} C_x \pi R_0^2 v^2 \, \vec{e}_z
 $$
 
 $$
