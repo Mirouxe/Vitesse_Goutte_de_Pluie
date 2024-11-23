@@ -43,7 +43,7 @@ $$
 
 Ainsi le PFD devient :
 $$
-- m \frac{dv}{dt} = - \frac{4}{3} \pi R_0^3 \rho_{\text{eau}} g + \frac{1}{2} \rho_{\text{air}} C_x \pi R_0^2 v^2
+- \frac{4}{3} \pi R_0^3 \rho_{\text{eau}} \frac{dv}{dt} = - \frac{4}{3} \pi R_0^3 \rho_{\text{eau}} g + \frac{1}{2} \rho_{\text{air}} C_x \pi R_0^2 v^2
 $$
 
 $$
