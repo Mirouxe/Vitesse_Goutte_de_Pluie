@@ -16,7 +16,6 @@ Voici les différents cas étudiés :
 
 ![image](https://github.com/user-attachments/assets/8f26d4de-9297-448a-8147-79af00f312b6)
 
-
 **Hypothèse 3.b (Loi de traînée quadratique en négligeant la poussée d'archimède)** :
 
 Le Principe Fondamental de la Dynamique (PFD) s'écrit :
@@ -54,6 +53,8 @@ avec :
 $$
 \beta = \frac{3C_x}{8R_0}\frac{\rho_{\text{air}}}{\rho_{\text{eau}}}
 $$
+
+La solution de l'équation différentielle donne la vitesse de la goutte au cours du temps et s'écrit : 
 $$
 v(t) = \sqrt{\frac{g}{\beta}} \tanh\left( \frac{1}{2} \ln \left| \frac{\sqrt{\frac{g}{\beta}} + v_0}{\sqrt{\frac{g}{\beta}} - v_0} \right| + \sqrt{g \beta} \, t \right)
 $$
