@@ -14,7 +14,8 @@ Voici les différents cas étudiés :
 
 - **Cas 3bis** : Goutte de pluie sphérique avec frottement (loi quadratique) soumise à son poid en négligeant la poussée d'Archimède
 
-![image](https://github.com/user-attachments/assets/17099c63-b83f-4753-8c69-14f54874ce6f)
+![image](https://github.com/user-attachments/assets/8f26d4de-9297-448a-8147-79af00f312b6)
+
 
 **Hypothèse 3.b (Loi de traînée quadratique en négligeant la poussée d'archimède)** :
 
